@@ -1,0 +1,32 @@
+{
+  "name": "etisalat (UAE) working brand tokens",
+  "source": "Read from the public site etisalat.ae on 2026-11-11 (core colours, type stack, button shape). Neutrals and status colours are derived working values, not official.",
+  "core": {
+    "red":   {"hex": "#E00800", "role": "Brand red: logo colour, primary buttons, links, the one highlight per view"},
+    "ink":   {"hex": "#140F21", "role": "Primary text and dark backgrounds"},
+    "white": {"hex": "#FFFFFF", "role": "Main background"}
+  },
+  "neutrals": {
+    "red_dark":   {"hex": "#B30600", "role": "Red text on tinted backgrounds, pressed state"},
+    "red_tint":   {"hex": "#FDE8E7", "role": "Soft red background for callouts and highlighted rows"},
+    "grey_700":   {"hex": "#5C5866", "role": "Secondary text"},
+    "grey_400":   {"hex": "#8A8794", "role": "Disabled text, axis labels on large charts only"},
+    "grey_200":   {"hex": "#DCDAE0", "role": "Rules, borders, gridlines"},
+    "grey_50":    {"hex": "#F4F3F6", "role": "Alternate rows, panels"}
+  },
+  "status": {
+    "good":  {"hex": "#137A47", "role": "At or above target (100%+)"},
+    "watch": {"hex": "#9A5B00", "role": "Close to target (90-99.9%)"},
+    "bad":   {"hex": "#E00800", "role": "Below 90% of target"}
+  },
+  "chart_series": ["#140F21", "#E00800", "#5C5866", "#8A8794", "#DCDAE0"],
+  "type": {
+    "brand_latin": "Suiss",
+    "brand_arabic": "GE SS Two",
+    "fallback_latin": ["Inter", "Roboto", "Arial", "sans-serif"],
+    "fallback_arabic": ["Noto Sans Arabic", "Noto Kufi Arabic", "Tahoma", "sans-serif"],
+    "office_latin": "Arial",
+    "office_arabic": "Tahoma"
+  },
+  "shape": {"base_unit_px": 4, "radius_px": 5, "button_radius_px": 25}
+}

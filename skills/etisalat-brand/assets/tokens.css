@@ -1,0 +1,35 @@
+/* etisalat (UAE) working brand tokens: see ../SKILL.md. Core colours and type stack read from etisalat.ae (2026-11-11). */
+:root {
+  --et-red: #E00800;
+  --et-ink: #140F21;
+  --et-white: #FFFFFF;
+
+  --et-red-dark: #B30600;
+  --et-red-tint: #FDE8E7;
+  --et-grey-700: #5C5866;
+  --et-grey-400: #8A8794;
+  --et-grey-200: #DCDAE0;
+  --et-grey-50: #F4F3F6;
+
+  --et-good: #137A47;
+  --et-watch: #9A5B00;
+  --et-bad: #E00800;
+
+  --et-font: "Suiss", "Inter", "Roboto", Arial, sans-serif;
+  --et-font-ar: "GE SS Two", "Noto Sans Arabic", "Noto Kufi Arabic", Tahoma, sans-serif;
+
+  --et-unit: 4px;
+  --et-radius: 5px;
+  --et-radius-button: 25px;
+}
+
+body { margin: 0; background: var(--et-white); color: var(--et-ink); font-family: var(--et-font); }
+:lang(ar), [dir="rtl"] { font-family: var(--et-font-ar); }
+a { color: var(--et-red); }
+
+.et-button {
+  display: inline-block; padding: calc(var(--et-unit) * 3) calc(var(--et-unit) * 6);
+  border-radius: var(--et-radius-button); background: var(--et-red); color: var(--et-white);
+  font-weight: 600; text-decoration: none; border: 1px solid var(--et-red);
+}
+.et-button--secondary { background: var(--et-white); color: var(--et-red); }

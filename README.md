@@ -23,6 +23,14 @@ Many skills in this repo are open source (Apache 2.0). We've also included the d
 
 **These skills are provided for demonstration and educational purposes only.** While some of these capabilities may be available in Claude, the implementations and behaviors you receive from Claude may differ from what is shown in these skills. These skills are meant to illustrate patterns and possibilities. Always test skills thoroughly in your own environment before relying on them for critical tasks.
 
+# What this fork adds
+
+- [`skills/etisalat-brand`](./skills/etisalat-brand): the etisalat (UAE) colours, type stack, bilingual layout rules and a colour and font audit script (`scripts/brand.py audit FILE`) for slides, documents, spreadsheets and web pages. Install it with `/plugin install etisalat-brand@anthropic-agent-skills`.
+- An **Etisalat Red** theme in [`skills/theme-factory`](./skills/theme-factory/themes/etisalat-red.md).
+- [`scripts/validate_skills.py`](./scripts/validate_skills.py): checks every skill against the Agent Skills spec (frontmatter, name, description length and triggering cues, broken file references, scripts that don't compile, eval files, marketplace entries). It runs on every push through `.github/workflows/validate-skills.yml`.
+
+To pull in new upstream skills: `git remote add upstream https://github.com/anthropics/skills.git && git fetch upstream && git merge upstream/main`.
+
 # Skill Sets
 - [./skills](./skills): Skill examples for Creative & Design, Development & Technical, Enterprise & Communication, and Document Skills
 - [./spec](./spec): The Agent Skills specification

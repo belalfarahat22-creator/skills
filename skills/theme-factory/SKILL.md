@@ -1,6 +1,6 @@
 ---
 name: theme-factory
-description: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.
+description: Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 11 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly. Use it when the user asks for a theme, a colour scheme, a "look", or to restyle or recolour a deck, document or page, or names one of the themes (Ocean Depths, Etisalat Red, ...).
 license: Complete terms in LICENSE.txt
 ---
 
@@ -27,7 +27,7 @@ To apply styling to a slide deck or other artifact:
 
 ## Themes Available
 
-The following 10 themes are available, each showcased in `theme-showcase.pdf`:
+The following 11 themes are available; the first 10 are showcased in `theme-showcase.pdf`:
 
 1. **Ocean Depths** - Professional and calming maritime theme
 2. **Sunset Boulevard** - Warm and vibrant sunset colors
@@ -39,6 +39,7 @@ The following 10 themes are available, each showcased in `theme-showcase.pdf`:
 8. **Tech Innovation** - Bold and modern tech aesthetic
 9. **Botanical Garden** - Fresh and organic garden colors
 10. **Midnight Galaxy** - Dramatic and cosmic deep tones
+11. **Etisalat Red** - Corporate red and white in the etisalat (UAE) style; not in the PDF showcase, so describe it from `themes/etisalat-red.md`
 
 ## Theme Details
 

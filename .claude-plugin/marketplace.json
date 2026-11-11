@@ -68,6 +68,15 @@
       "skills": [
         "./skills/discernment-nudge"
       ]
+    },
+    {
+      "name": "etisalat-brand",
+      "description": "etisalat (UAE) brand colours, type, bilingual layout rules and a colour/font audit for slides, documents, spreadsheets and web pages",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/etisalat-brand"
+      ]
     }
   ]
 }

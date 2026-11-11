@@ -1,0 +1,18 @@
+[
+  {"query": "make me a 5 slide deck for my etisalat store's October results, our red and white colours please", "should_trigger": true},
+  {"query": "can you format this excel so it looks like an e& report? header row, totals, the usual company look", "should_trigger": true},
+  {"query": "I'm a store manager at Etisalat UAE, build a one-page HTML scorecard for the team with our branding", "should_trigger": true},
+  {"query": "turn these KPI numbers into a poster for the shop floor, should match etisalat by e& style", "should_trigger": true},
+  {"query": "what hex code is the etisalat red? I need it for a chart", "should_trigger": true},
+  {"query": "write the monthly team briefing as a word doc, company branding, english and arabic", "should_trigger": true},
+  {"query": "here's our eand template, make the new incentive summary match it", "should_trigger": true},
+  {"query": "recolour this dashboard so it's on brand for etisalat - right now it's all blue", "should_trigger": true},
+  {"query": "make a deck about our Q3 results using Anthropic's brand colours", "should_trigger": false},
+  {"query": "what's the difference between etisalat and du postpaid plans for a family of four?", "should_trigger": false},
+  {"query": "apply the ocean depths theme to my slides", "should_trigger": false},
+  {"query": "fix the VLOOKUP in column F of this sheet, it returns #N/A for new staff IDs", "should_trigger": false},
+  {"query": "design a logo for my cousin's bakery, warm colours", "should_trigger": false},
+  {"query": "convert this PDF invoice to a spreadsheet", "should_trigger": false},
+  {"query": "explain how WCAG contrast ratios are calculated", "should_trigger": false},
+  {"query": "write a python script that emails me when my etisalat bill is above 500 AED", "should_trigger": false}
+]
