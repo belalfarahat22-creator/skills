@@ -9,8 +9,10 @@ import argparse
 import json
 import os
 import select
+import shutil
 import subprocess
 import sys
+import tempfile
 import time
 import uuid
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -50,7 +52,11 @@ def run_single_query(
     """
     unique_id = uuid.uuid4().hex[:8]
     clean_name = f"{skill_name}-skill-{unique_id}"
-    project_commands_dir = Path(project_root) / ".claude" / "commands"
+    # Each query gets its own project folder. With a shared .claude/commands/, parallel
+    # workers' copies of the same skill are all visible at once, Claude often calls a
+    # sibling's copy, and the run is scored as "not triggered" even though it triggered.
+    isolated_root = Path(tempfile.mkdtemp(prefix="trigger-eval-", dir=project_root))
+    project_commands_dir = isolated_root / ".claude" / "commands"
     command_file = project_commands_dir / f"{clean_name}.md"
 
     try:
@@ -86,7 +92,7 @@ def run_single_query(
             cmd,
             stdout=subprocess.PIPE,
             stderr=subprocess.DEVNULL,
-            cwd=project_root,
+            cwd=isolated_root,
             env=env,
         )
 
@@ -177,8 +183,7 @@ def run_single_query(
 
         return triggered
     finally:
-        if command_file.exists():
-            command_file.unlink()
+        shutil.rmtree(isolated_root, ignore_errors=True)
 
 
 def run_eval(
